@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sample Semantic Page — Project</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Semantic HTML Sample</h1>
+    <p>Designed to show semantic structure, an item list, images, and an external link.</p>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>
+        This page uses semantic tags such as <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and
+        <code>&lt;footer&gt;</code>. It includes a list, multiple images (with descriptive alt text), and at least one external link.
+      </p>
+    </section>
+
+    <section id="gallery" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Image Gallery</h2>
+
+      <!-- Three images (each with alt text) -->
+      <figure>
+        <img src="man.jpg" alt="Mountain landscape with lake and clouds" width="800" />
+        <figcaption>Mountain landscape with a reflective lake.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="Butterfly.jpg" alt="Close-up of a colorful butterfly on a flower" width="800" />
+        <figcaption>Butterfly feeding on a flower.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="forest.jpg" alt="Starry night sky with silhouette of trees" width="800" />
+        <figcaption>Starry night sky above a tree silhouette.</figcaption>
+      </figure>
+    </section>
+
+    <section id="tasks" aria-labelledby="tasks-heading">
+      <h2 id="tasks-heading">To-Do Checklist</h2>
+      <!-- List with at least three items -->
+      <ul>
+        <li>Validate HTML markup with the W3C validator.</li>
+        <li>Host this <code>index.html</code> on a hosting provider (GitHub Pages, Netlify, Vercel, etc.).</li>
+        <li>Share the hosted URL and request peer feedback.</li>
+        <li>Perform accessibility checks (alt text, headings, ARIA where appropriate).</li>
+      </ul>
+    </section>
+
+    <aside aria-labelledby="note-heading">
+      <h2 id="note-heading">Quick Note</h2>
+      <p>
+        The images used above are hotlinked from Unsplash for demonstration. For production use, prefer hosting images yourself or using properly licensed copies.
+      </p>
+    </aside>
+
+    <section id="resources" aria-labelledby="resources-heading">
+      <h2 id="resources-heading">Resources & External Link</h2>
+      <p>Learn more about semantic HTML and validation from an external reference:</p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN — HTML documentation (external)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025-12-08">2025</time> Semantic Sample Project — All rights reserved.</p>
+    <p>Page language: <strong>en</strong>. Character set: UTF-8.</p>
+  </footer>
+</body>
+</html>
